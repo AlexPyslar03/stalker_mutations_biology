@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>System not find</title>
+  <link rel="stylesheet" href="C:\Users\user\Desktop\test2.css">
+	<style>
+	   html,body {
+    height: 100%; /* Высота веб-страницы */
+   }
+section[role="banner"] {
+  position: relative;
+  width: 100%;
+}
+#wrapper-video {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -100;
+}
+#wrapper-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+	</style>
+ </head>
+ <body>
+<audio autoplay loop>
+    <source src="audio.mp3" type="audio/mp3">
+</audio>
+
+<header role="banner">
+  <div id="wrapper-video">
+    <video poster="" autoplay muted loop>
+      <source src="video.mp4"           
+        type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+    </video>
+  </div>
+</header>
+
+<marquee behavior="alternate" direction="left" bgcolor="#ffcc00"> 
+    <h1>SYSTEM         NOT             FIND</h1>
+  </marquee>
+ </body>
+</html>
